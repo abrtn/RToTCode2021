@@ -1,0 +1,23 @@
+communication_backend: serial
+#communication_backend: bluetooth
+
+logging:
+  global_level: DEBUG
+  driver_station: INFO
+  serial_level: INFO
+  bluetooth_level: INFO
+  bleak_level: INFO
+
+serial:
+  baudrate: 57600
+  #port: /dev/cu.usbmodem00001
+  port: COM3
+  timeout: 5 # Seconds
+
+bluetooth:
+  mac_address: 74B1AEEB-6720-4DCB-94BC-623775EA3529
+
+# Joystick UUID mapping to number
+# TODO This will be updated by the driverstation
+joystick_mapping:
+  030000005e040000a102000000007200: 1
